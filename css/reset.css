@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+@font-face{
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 400;
+  src: local(NotoSansKR-Regular);
+  src: url(font/NotoSansKR-Regular.woff);
+}
+@font-face{
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 600;
+  src: local(NotoSansKR-Medium);
+  src: url(font/NotoSansKR-Medium.woff);
+}
+@font-face{
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 800;
+  src: local(NotoSansKR-Bold);
+  src: url(font/NotoSansKR-Bold.woff);
+}
+
+*{margin: 0; padding: 0;}
+/* 구버전 IE 시맨틱태그 사용 - html5shiv.js */
+header, nav, section, footer, aside, figure, figcaption{
+  display: block;}
+
+body{font-family: 'NotoSansKR', sans-serif; font-size: 16px; 
+  font-weight: 400; line-height: 1.35; color: #333;}
+ul, ol{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+a{text-decoration: none; color: #333;}
+img{vertical-align: top; border: 0;}
+input, select, button{vertical-align: top;}
+button{border: none;}
+
+.clear::after{content: ''; display: block; clear: both;}
