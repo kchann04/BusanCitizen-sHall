@@ -28,4 +28,18 @@ $(document).ready(function(){//시작
       prevEl: ".sWrap2 .swiper-button-prev",
     },
   });
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 150){
+      $(".go_top").addClass("on");
+    }else{
+      $(".go_top").removeClass("on");
+    }
+  });
+
+  $(".go_top").click(function(){
+    $("html, body").animate({scrollTop : 0}, 400);
+    return false;
+  });
+
 });//끝

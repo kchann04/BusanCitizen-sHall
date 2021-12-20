@@ -17,11 +17,11 @@ header h1 a{
   font-size: 0;
   color: transparent;
 }
-nav{position: absolute; top: 0; right: 230px;}
+nav{position: absolute; top: 0; right: 185px;}
 nav .main_menu > li{float: left;}
 nav .main_menu > li > a{
   display: block;
-  padding: 0 25px;
+  width: 150px;
   line-height: 90px;
   transition: background-color 0.5s;
   font-weight: 600;
@@ -31,7 +31,9 @@ nav .main_menu > li:hover > a{background-color: #a14cb9; color: #fff;}
 .sub_menu{display: none;}
 .sub_menu > li > a{
   display: block;
-  padding: 20px;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 20px 10px;
   text-align: left;
   font-size: 14px;
   background-color: #f1f2f4;
@@ -45,7 +47,7 @@ nav .main_menu > li:hover > a{background-color: #a14cb9; color: #fff;}
 .search{
   position: absolute; top: 25px; right: 0;
   border: 3px solid #a14cb9;
-  padding: 0 40px 0 25px;
+  padding: 0 10px;
 }
 fieldset{border: 0;}
 legend{display: none;}
@@ -389,10 +391,14 @@ footer{
 }
 
 /* .go_top */
-.go_top{display: block; width: 68px; height: 68px;
+.go_top{
+  display: block;
+  width: 68px; height: 68px;
   background: url(../img/go_top.png) no-repeat;
   font-size: 0; color: transparent;
-  position: fixed; bottom: 30px; right: 10%;
+  position: fixed; bottom: -100px; right: 10%;
   transition: all 0.3s;
+  opacity: 0;
 }
+.go_top.on{opacity: 1; bottom: 40px;}
 .go_top:hover{background: url(../img/go_top_fill.png) no-repeat;}
