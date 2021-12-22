@@ -396,7 +396,7 @@ footer{
   width: 68px; height: 68px;
   background: url(../img/go_top.png) no-repeat;
   font-size: 0; color: transparent;
-  position: fixed; bottom: -100px; right: 10%;
+  position: fixed; bottom: -100px; right: 40px;
   transition: all 0.3s;
   opacity: 0;
 }
